@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exemplo1-let.js",
+  "scripts": {
+    "prestart": "npm i",
+    "start": "node ts/dist/test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
