@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Carro = /** @class */ (function () {
     function Carro(modelo, numeroDePortas) {
         this.velocidade = 0;
@@ -14,9 +15,10 @@ var Carro = /** @class */ (function () {
     Carro.prototype.velocidadeAtual = function () {
         return this.velocidade;
     };
+    Carro.prototype.toString = function () {
+        return "\n        modelo: " + this.modelo + "\n        numeroDePortas: " + this.numeroDePortas + "\n        velocidade: " + this.velocidade + "\n        ";
+    };
     return Carro;
 }());
-var carro1 = new Carro('Fusca', 2);
-console.log(carro1);
-carro1.acelerar();
-console.log(carro1);
+exports.default = Carro;
+//# sourceMappingURL=Carro.js.map

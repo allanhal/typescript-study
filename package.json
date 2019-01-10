@@ -2,10 +2,9 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "exemplo1-let.js",
+  "main": "src/index.ts",
   "scripts": {
-    "prestart": "npm i",
-    "start": "node ts/dist/test.js"
+    "start": "tsc -w"
   },
   "author": "",
   "license": "ISC"

@@ -1,4 +1,4 @@
-class Carro {
+export default class Carro {
     private modelo: string
     private numeroDePortas: number
     private velocidade: number = 0
@@ -19,9 +19,12 @@ class Carro {
     public velocidadeAtual(): number {
         return this.velocidade
     }
-}
 
-let carro1 = new Carro('Fusca', 2)
-console.log(carro1)
-carro1.acelerar();
-console.log(carro1)
+    public toString() {
+        return `
+        modelo: ${this.modelo}
+        numeroDePortas: ${this.numeroDePortas}
+        velocidade: ${this.velocidade}
+        `
+    }
+}
